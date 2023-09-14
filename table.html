@@ -5,18 +5,22 @@
     <title>Таблиця</title>
     <style>
         table {
-			width: 80%;
+            width: 80%;
             border-collapse: collapse;
         }
 
         td {
             border: 1px solid black;
-			text-align: center;
-			vertical-align: top;
+            text-align: center;
+            vertical-align: top;
         }
 
         td.no-border {
             border: none;
+        }
+
+        td.turbulence {
+            background-color: #ccc; /* Колір турбуляції */
         }
 
     </style>
@@ -43,23 +47,23 @@
         </tr>
         <tr>
             <td rowspan="5">7
-				<ol>
-				  <li></li>
-				  <li></li>
-				  <li></li>
-				  <li></li>
-				  <li></li>
-				</ol>
-			</td>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </td>
             <td colspan="2" rowspan="5">8
-				<ul>
-				  <li></li>
-				  <li></li>
-				  <li></li>
-				  <li></li>
-				  <li></li>
-				</ul>
-			</td>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </td>
             <td class="no-border"></td>
             <td class="no-border"></td>
         </tr>
@@ -69,7 +73,7 @@
             <td class="no-border"></td>
             <td class="no-border"></td>
         </tr>
-        <tr>
+        <tr class="turbulence"><!-- Турбуляція -->
             <td class="no-border"></td>
             <td colspan="2" class="no-border"></td>
             <td class="no-border"></td>
