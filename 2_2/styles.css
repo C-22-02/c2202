@@ -1,0 +1,21 @@
+.font-formatting {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.text-formatting {
+    color: #0000FF;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.spacing {
+    padding: 20px;
+    margin: 10px;
+}
+
+.border {
+    border: 2px dotted #FF0000;
+    border-radius: 10px;
+}
