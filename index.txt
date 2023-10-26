@@ -1,9 +1,0 @@
-<html>
-
-        <head>
-
-        <title>Проста Web-сторінка</title>
-
-        </head>
-
-  <body>
