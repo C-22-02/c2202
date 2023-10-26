@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About me</title>
+    <style>
+        body {
+            background: url(background.jpg) no-repeat;
+            background-size: cover;
+            margin: 0;
+            font-family: 'Times New Roman', sans-serif;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        p {
+            margin-left: 20px;
+        }
+        .photos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .photos a {
+            flex: 1;
+            margin: 0 5px;
+            position: relative;
+            overflow: hidden;
+        }
+        .photos img {
+            max-width: 100%;
+            height: auto;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+        .photos a:hover img {
+            transform: scale(1.1);
+        }
+        aside {
+            text-align: right;
+            margin-top: 50px;
+            margin-right: 20px;
+            color: gray;
+        }
+        .photo {
+            text-align: center;
+        }
+        .photo img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Про мене</h1>
+        <nav>
+            <ul>
+                <li><a href="#hobby">Моє хобі</a></li>
+                <li><a href="#movies">Мої улюблені фільми</a></li>
+                <li><a href="#games">Моя улюблена гра</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <a name="hobby"></a>
+    <section>
+        <h2>Моє хобі - плавання</h2>
+        <p><a href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BB%D0%B0%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" target="_blank">Плавання</a> - це моє улюблене хобі, яке я вже займаюся кілька років. Ця активність допомагає мені відпочити і розслабитися, а також підтримує мою фізичну форму.</p>
+        <p>Окрім того, плавання має численні корисні для здоров'я переваги, включаючи покращення дихальної та серцево-судинної системи, зміцнення м'язів і збільшення витривалості.</p>
+        <div class="photo">
+            <a href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BB%D0%B0%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" target="_blank">
+                <img src="swim.jpg" alt="Фотографія 1">
+            </a>
+        </div>
+    </section>
+
+    <a name="movies"></a>
+    <section>
+        <h2>Мої улюблені фільми</h2>
+        <p>Зоряні війни: епічна космічна сага про боротьбу добра і зла в галактиці. Форд проти Феррарі: захоплююча історія змагань між Фордом і Феррарі на автогонках Ле-Ман. З міркувань совісті: це фільм, який розповідає історію внутрішньої боротьби головного героя, який стикається з моральними ділемами та змушений приймати важливі рішення, долаючи власні сумніви</p>
+        <div class="photos">
+            <a href="https://en.wikipedia.org/wiki/Star_Wars" target="_blank"><img src="star.jpg" alt="Фотографія 1"></a>
+            <a href="https://en.wikipedia.org/wiki/Hacksaw_Ridge" target="_blank"><img src="ridge.jpg" alt="Фотографія 2"></a>
+            <a href="https://en.wikipedia.org/wiki/Ford_v_Ferrari" target="_blank"><img src="er.jpg" alt="Фотографія 3"></a>
+        </div>
+    </section>
+
+    <a name="games"></a>
+    <section>
+        <h2>Моя улюблена гра</h2>
+        <p>World of Tanks - ця гра трансформує вас в командира танку, де ви можете взяти участь у великих танкових битвах.</p>
+        <div class="photo">
+            <a href="https://worldoftanks.eu/uk/" target="_blank">
+                <img src="wot.jpg" alt="Фотографія 1">
+            </a>
+        </div>
+    </section>
+
+    <aside>
+        <p>Ви можете отримати детальнішу інформацію, просто натисніть на фото або підкреслені слова.</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2023 Моя сторінка</p>
+    </footer>
+</body>
+</html>
