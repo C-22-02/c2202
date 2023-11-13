@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM взаємодія</title>
+</head>
+<body>
+    <h1 id="main-heading">Ласкаво просимо на сайт</h1>
+    <div class="content">
+        <p>Це приклад HTML-сторінки.</p>
+        <ul>
+            <li>Елемент 1</li>
+            <li>Елемент 2</li>
+            <li>Елемент 3</li>
+        </ul>
+    </div>
+    <a href="#" id="link">Клікніть мене</a>
+</body>
+<script>
+    // Завдання 1: Зміна стилю та тексту елементу за його id.
+    var mainHeading = document.getElementById('main-heading');
+    mainHeading.style.color = 'blue';
+    mainHeading.textContent = 'Ласкаво просимо на сайт';
+
+    // Завдання 2: Зміна стилю елементів за їх класом.
+    var contentDivs = document.getElementsByClassName('content');
+    for (var i = 0; i < contentDivs.length; i++) {
+        contentDivs[i].style.backgroundColor = 'lightblue';
+    }
+
+    // Завдання 3: Навігація по документу та виведення інформації про структуру.
+    var list = document.querySelector('ul');
+    var listItem = list.firstElementChild;
+    console.log('Перший елемент списку:', listItem.textContent);
+
+    var parentDiv = list.parentElement;
+    console.log('Батьківський елемент списку:', parentDiv.tagName);
+
+    // Завдання 4: Додавання обробників подій.
+    var link = document.getElementById('link');
+    link.addEventListener('click', function() {
+        alert('Ви клікнули на посилання!');
+    });
+</script>
+</html>
