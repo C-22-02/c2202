@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+<body>
+
+<!-- Завдання 1: Робота з подіями миші -->
+<button id="myButton">Click me</button>
+
+<script>
+    // Завдання 1: Робота з подіями миші
+    document.getElementById('myButton').addEventListener('click', function () {
+        alert('Кнопка була натиснута!');
+    });
+</script>
+
+<!-- Завдання 2: Обробка подій клавіатури -->
+<input type="text" id="myInput">
+
+<script>
+    // Завдання 2: Обробка подій клавіатури
+    document.getElementById('myInput').addEventListener('keydown', function () {
+        console.log('Клавіша була натиснута!');
+    });
+</script>
+
+<!-- Завдання 3: Робота з фокусом -->
+<input type="text" id="focusInput">
+<button id="focusButton">Focus</button>
+
+<script>
+    // Завдання 3: Робота з фокусом
+    var focusInput = document.getElementById('focusInput');
+    focusInput.addEventListener('focus', function () {
+        console.log('Елемент отримав фокус!');
+    });
+
+    focusInput.addEventListener('blur', function () {
+        console.log('Елемент втратив фокус!');
+    });
+</script>
+
+<!-- Завдання 4: Робота з об'єктом document -->
+<script>
+    // Завдання 4: Робота з об'єктом document
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log('Документ повністю завантажено!');
+    });
+</script>
+
+<!-- Завдання 5: Використання addEventListener -->
+<div id="eventElement">Click me too</div>
+
+<script>
+    // Завдання 5: Використання addEventListener
+    var eventElement = document.getElementById('eventElement');
+
+    function firstEventHandler() {
+        console.log('Подія виникла!');
+    }
+
+    function secondEventHandler() {
+        console.log('Ще один обробник події!');
+    }
+
+    eventElement.addEventListener('click', firstEventHandler);
+    eventElement.addEventListener('click', secondEventHandler);
+</script>
+
+</body>
+</html>
