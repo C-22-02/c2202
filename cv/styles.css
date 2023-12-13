@@ -1,0 +1,289 @@
+/* Стилі для всього документа */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #90EE90; 
+    font-family: monospace, sans-serif;
+}
+
+.section-title {
+	position: relative;
+	margin: 0;
+	margin-bottom: 36px;
+	padding-left: 60px;
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 600;
+}
+.section-title::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 20px;
+	height: 36px;
+	background-color: #4CAF50;
+}
+
+/* Стилі для контейнера, що містить ліву та основну секції */
+#container {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 170vh;
+    background-color: #f9f9f9; /* м'який колір для вільного місця */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для лівої фіксованої секції */
+#left-section {
+    width: 15%; 
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    text-align: center; 
+}
+
+/* Стилі для прізвища і імені */
+#full-name {
+    margin-bottom: 2px; 
+}
+
+/* Стилі для фотографії профілю */
+.profile-photo {
+    border-radius: 50%; 
+    width: 200px; 
+    height: 200px;
+	margin-bottom: 10px;
+}
+
+/* Стилі для nav */
+.nav ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 40px;
+}
+
+.nav ul li {
+	padding-bottom: 15px;
+}
+
+.nav ul li a {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	text-decoration: none;
+	transition: font-size 0.3s ease-in-out;
+}
+
+.nav ul li a:hover {
+	font-size: 24px; 
+}
+
+/* Стилі для основної секції */
+#main-section {
+    flex: 1; /* Встановлюємо решту доступного простору основною секцією */
+    padding: 20px;
+    height: 100vh;
+    margin-left: 25%; 
+}
+
+/* About me + education*/
+.about-me {
+	padding: 0;
+	margin-bottom: 54px;
+}
+.about-me p {
+	margin: 0 60px 0 60px;
+	padding: 0;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/* contact */
+.contact {
+	padding: 0;
+	margin-bottom: 54px;
+}
+.contact ul {
+	list-style: none; /* Вилучаємо маркери */
+	margin: 0 60px 0 60px;
+	padding: 0;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/* Language */
+
+/* Стилі для контейнера, що містить список мов програмування */
+.languages__list {
+	display: grid; /* Використовуємо сітку для організації вмісту */
+	grid-template-columns: repeat(3, 1fr); /* Три стовпці з однаковою шириною */
+	column-gap: 28px; /* Відстань між стовпцями */
+	grid-template-rows: repeat(2, auto); /* Два рядки, які автоматично змінюють висоту */
+	margin: 0 60px; /* Зовнішні відступи */
+}
+
+/* Стилі для заголовка розділу мов програмування */
+.languages__title {
+	grid-row: 1 / span 2; /* Займає перший і другий рядок (спан висотою 2 рядки) */
+	position: relative; /* Встановлюємо позицію відносно батьківського елемента */
+	font-size: 16px; /* Розмір шрифту */
+	line-height: 2.5; /* Висота рядка */
+	font-weight: 600; /* Товщина шрифту (жирний) */
+	padding-top: 20px; /* Відступ зверху */
+}
+
+/* Стилі для вертикальної полоси перед заголовком */
+.languages__title::before {
+	position: absolute; /* Абсолютне позиціонування відносно батьківського елемента */
+	content: ""; /* Пустий вміст (псевдоелемент відображається, але без тексту) */
+	width: 34px; /* Ширина полоси */
+	height: 10px; /* Висота полоси */
+	background-color: #4CAF50; /* Колір фону */
+	top: 0; /* Розміщення зверху */
+}
+
+/* Стилі для рівня володіння мовою програмування */
+.languages__level {
+    font-size: 16px; /* Розмір шрифту */
+	margin: 0; /* Зовнішні відступи */
+}
+
+/* Стилі для парних рівнів володіння */
+.languages__level:nth-of-type(even) {
+    margin-bottom: 0;  /* Встановлюємо нульовий зовнішній відступ справа для парних елементів */
+}
+
+/* Стилі для всіх рівнів володіння, крім останнього */
+.languages__level:not(:last-child) {
+    padding-bottom: 24px;  /* Додаємо відступ справа для всіх елементів, крім останнього */
+}
+
+
+/* Skills */
+.skills__wrapper {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.skills__block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.skills__text {
+	padding-left: 60px;
+	font-weight: 600;
+	margin-right: 10px; 
+}
+
+.skills-list {
+	padding: 0;
+	margin-right: 450px;
+	align-items: center;
+	display: flex;
+	list-style-type: none;
+}
+
+.skills-list__item {
+	width: 15px;
+	height: 15px;
+	background-color: #4CAF50;
+	border-radius: 50%; 
+	margin-left: 0; 
+	margin-right: 5px; 
+	transition: all .3s linear;
+}
+
+.skills-list__item_gray {
+	background-color: #bdc3c7; 
+	border-radius: 50%; 
+	margin-left: 0; 
+	margin-right: 5px; 
+}
+
+ .skills-list__item:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/* Стилі для кнопки "Top" */
+#topBtn {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    font-size: 1.5vw;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    padding: 1vh 1.5vw;
+    border-radius: 50%;
+}
+
+
+/* dark-mode */
+.theme-toggle-btn {
+  position: absolute;
+  bottom: 60px; 
+  left: 30px; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+#icon {
+  font-size: 30px;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.moon {
+  transform: rotate(-25deg);
+}
+
+/* language-switch */
+#language-switch {
+    position: absolute;
+    bottom: 53px;
+    left: 80px;
+    margin: 10px;
+    display: flex;
+}
+
+
+.language-link {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.language-link:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* dark-mode */
+body.dark-mode #container, body.dark-mode #topBtn {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+body.dark-mode .skills-list__item {
+    background-color: #c0c0c0;
+}
+
+body.dark-mode {
+    background-color: #777777; 
+}
+
+body.dark-mode .skills-list__item_gray, .dark-mode .section-title::before, body.dark-mode .languages__title::before, body.dark-mode #left-section {
+    background-color: #333333; 
+}

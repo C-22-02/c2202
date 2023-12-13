@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Роман Братасюк</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="left-section">
+            <!-- Зміст для лівої секції -->
+            <img src="ava.png" alt="фото" class="profile-photo">
+            <h1 id="full-name">Братасюк Роман</h1>
+
+            <!-- Гіперпосилання на розділи -->
+            <nav class="nav">
+                <ul class="navigation">
+                    <li><a href="#about-me">Про мене</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                    <li><a href="#education">Освіта</a></li>
+                    <li><a href="#languages">Мови</a></li>
+                    <li><a href="#skills">Навички</a></li>
+                </ul>
+            </nav>
+			
+			<!-- dark-mode -->
+			<div id="toggleButton" class="theme-toggle-btn" onclick="toggleDarkMode()" title="Змінити режим">
+				<span id="icon" class="moon">&#x1F319;</span>
+			</div>
+			
+<!-- change languages -->
+			<div id="language-switch">
+				<a href="cv.html" class="language-link" title="Змінити мову">🌐 In English</a>
+			</div>
+			
+        </div>
+
+        <div id="main-section">
+            <!-- Про мене -->
+            <section class="about-me" id="about-me">
+                <h2 class="section-title">Про мене</h2>
+                <p>
+                    Мені подобається вчитися та вивчати щось нове. Я люблю читати книги, займатися фізичною активністю, слухати музику різних жанрів. Мене цікавлять якісні автомобілі та мотоцикли. Я веду активний та здоровий спосіб життя. Мені подобається працювати і бачити результати своєї роботи.<br />
+                    З дитинства я маю схильність до роботи з електронікою та комп'ютерами. Мені подобається розбирати, збирати та налаштовувати щось. Я можу будувати, налаштовувати та вирішувати проблеми з комп'ютерами.
+                </p>
+            </section>
+
+            <!-- Контакти -->
+            <section class="contact" id="contact">
+                <h2 class="section-title">Контакти</h2>
+                <ul>
+                    <li><strong>Телефон:</strong> +380 (xx) xxx xx xx</li>
+                    <li><strong>Email:</strong> xxxxxxxxxx@gmail.com</li>
+                    <li><strong>Адреса:</strong> Київ, Україна</li>
+                </ul>
+            </section>
+
+            <!-- Освіта -->
+            <section class="about-me" id="education">
+                <h2 class="section-title">Освіта</h2>
+                <p>
+                    <a href="https://kpi.ua/" target="_blank">Київський політехнічний інститут</a><br>
+                    <!-- <a href="https://iszzi.kpi.ua/" target="_blank">Інститут спеціального зв'язку та захисту інформації</a><br> -->
+                    У процесі<br>
+                    Спеціалізація: Кібербезпека
+                </p>
+            </section>
+
+            <!-- Мови -->
+            <section class="languages" id="languages">
+                <h2 class="section-title">Мови</h2>
+                <dl class="languages__list">
+                    <dt class="languages__title">Англійська</dt>
+                    <dd class="languages__level">Середній рівень</dd>
+                    <dt class="languages__title">Українська</dt>
+                    <dd class="languages__level">Рідна</dd>
+                    <dt class="languages__title">Польська</dt>
+                    <dd class="languages__level">Початковий рівень</dd>
+                </dl>
+            </section>
+
+            <!-- Навички -->
+            <section class="skills" id="skills">
+                <h2 class="section-title">Навички</h2>
+                <ul class="skills__wrapper">
+                    <li class="skills__block">
+                        <p class="skills__text">HTML5</p>
+                        <ul class="skills-list">
+                            <li class="skills-list__item"></li>
+                            <li class="skills-list__item"></li>
+                            <li class="skills-list__item"></li>
+                            <li class="skills-list__item"></li>
+                            <li class="skills-list__item skills-list__item_gray"></li>
+                            <li class="skills-list__item skills-list__item_gray"></li>
+                        </ul>
+                    </li>
+                    <li class="skills__block">
+                        <p class="skills__text">CSS3</p>
+                        <ul class="skills-list">
+                            <li class="skills-list__item"></li>
+                            <li class="skills-list__item"></li>
+                            <li class="skills-list__item"></li>
+                            <li class="skills-list__item"></li>
+                            <li class="skills-list__item skills-list__item_gray"></li>
+                            <li class="skills-list__item skills-list__item_gray"></li>
+                        </ul>
+                    </li>
+                    <li class="skills__block">
+							<p class="skills__text">JS basic</p>
+							<ul class="skills-list">
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+							</ul>
+						</li>
+						<li class="skills__block">
+							<p class="skills__text">Figma</p>
+							<ul class="skills-list">
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+							</ul>
+						</li>
+					</ul>				
+			</section>
+		</div>
+    </div>
+	<button onclick="scrollToTop()" id="topBtn" title="Go to top">Вгору</button>
+</html>
+
+</body>
+</html>

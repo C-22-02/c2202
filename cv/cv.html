@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+    <title>Roman Bratasiuk</title>
+</head>
+
+<body>
+    <div id="container">
+		<div id="left-section">
+			<!-- Зміст для лівої секції -->
+			<img src="ava.png" alt="photo" class="profile-photo">
+			<h1 id="full-name">Bratasiuk Roman</h1>
+			
+			<!-- Гіперпосилання на розділи -->
+			<nav class="nav">
+				<ul class="navigation">
+					<li><a href="#about-me">About me</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#languages">Languages</a></li>
+					<li><a href="#skills">Skills</a></li>
+				</ul>
+			</nav>
+			
+<!-- dark-mode -->
+			<div id="toggleButton" class="theme-toggle-btn" onclick="toggleDarkMode()" title="Змінити режим">
+					<span id="icon" class="moon">&#x1F319;</span>
+			</div>
+			
+<!-- change languages -->
+			<div id="language-switch">
+				<a href="cvua.html" class="language-link" title="Змінити мову">🌐 Українською</a>
+			</div>
+
+
+
+		</div>
+
+		<div id="main-section">
+				<!-- About me -->
+			<section class="about-me" id="about-me">
+				<h2 class="section-title">About me</h2>
+				<p>
+				I like to study and learn something new. I like to read books, do
+				physical education, listen to music of different genres. I'm fond of
+				good cars and bikes. I lead active and healhy lifestyle. I like to
+				work and see the results of my work.<br />
+				Since childhood, I have had a predisposition to work with
+				electronics and computers. I like to disassemble, assemble and
+				configure something. I can build, configure, solve problems with
+				computers.
+				</p>
+			</section>
+			
+			<!-- Contact -->
+			<section class="contact" id="contact">
+				<h2 class="section-title">Contact</h2>
+				<ul>
+					<li><strong>Phone:</strong> +380 (xx) xxx xx xx</li>
+					<li><strong>Email:</strong> xxxxxxxxxx@gmail.com</li>
+					<li><strong>Address:</strong> Kyiv, Ukraine</li>
+				</ul>
+			</section>
+			
+			<!-- Education -->
+			<section class="about-me" id="education">
+				<h2 class="section-title">Education</h2>
+				<p> 
+				<a href="https://kpi.ua/" target="_blank">Kyiv Polytechnic Institute</a><br>
+				<!-- <a href="https://iszzi.kpi.ua/" target="_blank">Institute for Special Communications and Protection of information</a><br> -->
+				In progress <br>
+				Specialization: Cyber security
+			</section>
+			
+			<!-- languages -->
+			<section class="languages" id="languages">
+				<h2 class="section-title">Languages</h2>
+				<dl class="languages__list">
+					<dt class="languages__title">English</dt>
+					<dd class="languages__level">Intermediate</dd>
+					<dt class="languages__title">Ukraine</dt>
+					<dd class="languages__level">Native</dd>
+					<dt class="languages__title">Polish</dt>
+					<dd class="languages__level">Beginner</dd>
+				</dl>
+			</section>
+			
+			<!-- Skills -->
+			<section class="skills" id="skills">
+				<h2 class="section-title">Skills</h2>
+				<ul class="skills__wrapper">
+						<li class="skills__block">
+							<p class="skills__text">HTML5</p>
+							<ul class="skills-list">
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+							</ul>
+						</li>
+						<li class="skills__block">
+							<p class="skills__text">CSS3</p>
+							<ul class="skills-list">
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+							</ul>
+						</li>
+						<li class="skills__block">
+							<p class="skills__text">JS basic</p>
+							<ul class="skills-list">
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+							</ul>
+						</li>
+						<li class="skills__block">
+							<p class="skills__text">Figma</p>
+							<ul class="skills-list">
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+								<li class="skills-list__item skills-list__item_gray"></li>
+							</ul>
+						</li>
+					</ul>				
+			</section>
+		</div>
+    </div>
+	<button onclick="scrollToTop()" id="topBtn" title="Go to top">Top</button>
+</html>
+
+</body>
+</html>
